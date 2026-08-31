@@ -1,0 +1,38 @@
+
+.not-found-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.not-found-img {
+  width: 320px;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.not-found-container h1 {
+  color: #1e293b;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.not-found-container p {
+  color: #64748b;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.home-btn {
+  background-color: #f7931e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+}

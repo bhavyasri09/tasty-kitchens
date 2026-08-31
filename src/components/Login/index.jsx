@@ -117,7 +117,7 @@ const Login = () => {
 
       <div className="login-img-container">
         <img
-          src="https://assets.ccbp.in/frontend/react-js/tasty-kitchens-login-img.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIB0bfGaXCylR49G2bLw-ldiLUQ-QD7AKgRaM_j6SNYTUOwiCYq2V88zQ&s=10"
           alt="website login"
           className="login-img"
         />

@@ -1,3 +1,26 @@
+:root {
+  /* Warm Luxury Color Palette */
+  --bg-primary: #121418;       /* Rich Charcoal */
+  --bg-card: #1A202C;          /* Dark Navy Slate */
+  --accent: #D4AF37;           /* Muted Gold */
+  --accent-bg: rgba(212, 175, 55, 0.12);
+  --accent-border: #E2B93B;    /* Warm Amber */
+  --text-h: #F7FAFC;           /* Warm Off-White */
+  --text-body: #A0AEC0;        /* Soft Gray */
+  --border: rgba(247, 250, 252, 0.1);
+  --social-bg: #222A38;
+  --shadow: 0 4px 14px rgba(212, 175, 55, 0.15);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-h);
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -70,6 +93,7 @@
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
+  background-color: var(--bg-card);
 }
 
 #next-steps > div {
@@ -109,11 +133,13 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  border: 1px solid var(--border);
 }
 
 #next-steps ul a:hover {
   box-shadow: var(--shadow);
+  border-color: var(--accent);
 }
 
 #next-steps ul a .button-icon {
@@ -191,4 +217,3 @@
     height: 48px;
   }
 }
-

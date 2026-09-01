@@ -1,9 +1,10 @@
-
 .cart-container {
   max-width: 1000px;
   margin: 0 auto;
   min-height: 75vh;
   padding: 32px 16px;
+  background-color: #121418; /* Rich Charcoal */
+  color: #f7fafc; /* Warm Off-White */
 }
 
 .payment-success-container,
@@ -30,21 +31,30 @@
 .home-btn,
 .order-btn,
 .place-order-btn {
-  background-color: #f7931e;
-  color: white;
+  background-color: #d4af37; /* Muted Gold */
+  color: #121418; /* Dark Charcoal text for contrast */
   border: none;
   border-radius: 8px;
   padding: 10px 24px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-btn:hover,
+.order-btn:hover,
+.place-order-btn:hover {
+  background-color: #e2b93b; /* Warm Amber */
+  transform: translateY(-1px);
 }
 
 .cart-headers {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  color: #475569;
-  border-bottom: 1px solid #cbd5e1;
+  color: #a0aec0; /* Soft Gray */
+  border-bottom: 1px solid rgba(247, 250, 252, 0.15);
+  padding-bottom: 12px;
 }
 
 .cart-items-list {
@@ -57,7 +67,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid rgba(247, 250, 252, 0.08);
   gap: 20px;
 }
 
@@ -73,25 +83,30 @@
   height: 60px;
   object-fit: cover;
   border-radius: 8px;
+  border: 1px solid rgba(247, 250, 252, 0.08);
 }
 
 .cart-item-name {
   font-size: 16px;
+  color: #f7fafc; /* Warm Off-White */
 }
 
 .quantity-container {
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #d4af37; /* Muted Gold border */
   padding: 4px 8px;
   border-radius: 4px;
+  color: #f7fafc;
 }
 
 .quantity-container button {
   background: transparent;
   border: none;
+  color: #d4af37; /* Muted Gold buttons */
   cursor: pointer;
+  font-size: 16px;
 }
 
 .cart-summary-container {
@@ -99,11 +114,14 @@
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
+  border-top: 1px solid rgba(247, 250, 252, 0.15);
+  padding-top: 20px;
 }
 
 .total-price-text {
   font-size: 20px;
   font-weight: bold;
+  color: #f7fafc;
 }
 
 .place-order-btn {
@@ -120,4 +138,3 @@
     width: 100%;
   }
 }
-

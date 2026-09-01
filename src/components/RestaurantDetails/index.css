@@ -1,18 +1,19 @@
 /* Container Layout */
 .restaurant-details-container {
   min-height: 80vh;
-  background-color: #0f172a;
-  color: #ffffff;
+  background-color: #121418; /* Rich Charcoal */
+  color: #a0aec0; /* Soft Gray */
 }
 
 /* Banner Section */
 .banner-container {
-  background-color: #1e293b;
-  color: #ffffff;
+  background-color: #1a202c; /* Dark Navy Slate */
+  color: #f7fafc; /* Warm Off-White */
   display: flex;
   align-items: center; /* Keeps button, image, and info vertically aligned */
   gap: 24px;
   padding: 40px 10%;
+  border-bottom: 1px solid rgba(247, 250, 252, 0.08);
 }
 
 /* Back Button Styling (Inside Banner) */
@@ -30,13 +31,13 @@
 
 .back-arrow-icon {
   font-size: 26px;
-  color: #ffffff;
+  color: #f7fafc;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .back-btn:hover .back-arrow-icon {
   transform: translateX(-5px);
-  color: #f7931e;
+  color: #d4af37; /* Muted Gold */
 }
 
 /* Banner Image & Info */
@@ -46,6 +47,7 @@
   border-radius: 12px;
   object-fit: cover;
   flex-shrink: 0;
+  border: 1px solid rgba(247, 250, 252, 0.1);
 }
 
 .banner-info {
@@ -55,13 +57,14 @@
 .banner-info h1 {
   margin: 0 0 10px;
   font-size: 32px;
+  color: #f7fafc;
 }
 
 .ratings-cost-container {
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  border-left: 1px solid #475569;
+  border-left: 1px solid rgba(247, 250, 252, 0.15);
   padding-left: 20px;
 }
 
@@ -81,8 +84,9 @@
   gap: 16px;
   padding: 16px;
   border-radius: 12px;
-  background-color: #1e293b;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background-color: #1a202c; /* Dark Navy Slate */
+  border: 1px solid rgba(247, 250, 252, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .food-img {
@@ -95,41 +99,41 @@
 .food-info h2 {
   margin: 0 0 10px;
   font-size: 18px;
-  color: #ffffff;
+  color: #f7fafc;
 }
 
 /* Cart & Quantity Controls */
 .add-btn {
   background-color: transparent;
-  color: #f7931e;
-  border: 1px solid #f7931e;
+  color: #d4af37; /* Muted Gold */
+  border: 1px solid #d4af37;
   border-radius: 4px;
   padding: 6px 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .add-btn:hover {
-  background-color: #f7931e;
-  color: #ffffff;
+  background-color: #d4af37;
+  color: #121418; /* Dark Charcoal text on gold */
 }
 
 .quantity-controller {
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid #f7931e;
+  border: 1px solid #d4af37;
   padding: 4px 8px;
   border-radius: 4px;
   width: fit-content;
-  color: #ffffff;
+  color: #f7fafc;
 }
 
 .quantity-controller button {
   background: transparent;
   border: none;
-  color: #f7931e;
+  color: #d4af37;
   cursor: pointer;
   font-size: 18px;
   display: flex;

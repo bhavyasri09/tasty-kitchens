@@ -2,6 +2,7 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
+  background-color: #121418; /* Rich Charcoal */
 }
 
 .login-form-container {
@@ -10,6 +11,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
+  background-color: #121418; /* Rich Charcoal */
 }
 
 .form-container {
@@ -28,7 +30,7 @@
 }
 
 .login-heading {
-  color: #f7931e;
+  color: #d4af37; /* Muted Gold */
   font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   font-style: italic;
@@ -37,7 +39,7 @@
 }
 
 .login-title {
-  color: #ffffff;
+  color: #f7fafc; /* Warm Off-White */
   font-family: 'DM Sans', sans-serif;
   font-size: 28px;
   margin: 0 0 20px;
@@ -50,7 +52,7 @@
 }
 
 .input-label {
-  color: #e2e8f0;
+  color: #a0aec0; /* Soft Gray */
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -60,23 +62,35 @@
 .username-input,
 .password-input {
   height: 40px;
-  border: 1px solid #cbd3e1;
+  border: 1px solid rgba(247, 250, 252, 0.15);
   border-radius: 5px;
-  background-color: #f1f5f9;
+  background-color: #1a202c; /* Dark Navy Slate */
   padding: 0 12px;
   outline: none;
-  color:#0f172a;
+  color: #f7fafc; /* Warm Off-White */
+  transition: border-color 0.2s ease;
+}
+
+.username-input:focus,
+.password-input:focus {
+  border-color: #d4af37; /* Muted Gold */
 }
 
 .login-button {
   height: 40px;
   border: none;
   border-radius: 7px;
-  background-color: #f7931e;
-  color: white;
+  background-color: #d4af37; /* Muted Gold */
+  color: #121418; /* Dark Charcoal for high contrast text */
   font-weight: bold;
   cursor: pointer;
   margin-top: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #e2b93b; /* Warm Amber */
+  transform: translateY(-1px);
 }
 
 .error-message {
@@ -105,4 +119,3 @@
     display: none;
   }
 }
-

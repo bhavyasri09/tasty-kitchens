@@ -60,9 +60,9 @@
 .username-input,
 .password-input {
   height: 40px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #4c5461;
   border-radius: 5px;
-  background-color: #f1f5f9;
+  background-color: #4c5461;
   padding: 0 12px;
   outline: none;
 }

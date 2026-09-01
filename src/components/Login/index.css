@@ -37,7 +37,7 @@
 }
 
 .login-title {
-  color: #0f172a;
+  color: #ffffff;
   font-family: 'DM Sans', sans-serif;
   font-size: 28px;
   margin: 0 0 20px;
@@ -50,7 +50,7 @@
 }
 
 .input-label {
-  color: #475569;
+  color: #e2e8f0;
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -60,11 +60,12 @@
 .username-input,
 .password-input {
   height: 40px;
-  border: 1px solid #4c5461;
+  border: 1px solid #cbd3e1;
   border-radius: 5px;
-  background-color: #4c5461;
+  background-color: #f1f5f9;
   padding: 0 12px;
   outline: none;
+  color:#0f172a;
 }
 
 .login-button {

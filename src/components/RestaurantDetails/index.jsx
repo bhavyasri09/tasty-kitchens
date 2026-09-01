@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, useNavigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import {Oval} from 'react-loader-spinner'
-import {FaStar, FaRupeeSign} from 'react-icons/fa'
+import {FaStar, FaRupeeSign, FaArrowLeft} from 'react-icons/fa'
 import {BsPlus} from 'react-icons/bs'
 import {HiOutlineMinusSm} from 'react-icons/hi'
 
@@ -14,6 +14,7 @@ import './index.css'
 
 const RestaurantDetails = () => {
   const {id} = useParams()
+  const navigate = useNavigate()
 
   const [details, setDetails] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -152,7 +153,17 @@ const RestaurantDetails = () => {
       <Header />
 
       <div className="restaurant-details-container">
+        {/* Banner Container: Arrow, Image, and Info placed side-by-side */}
         <div className="banner-container">
+          <button
+            type="button"
+            className="back-btn"
+            onClick={() => navigate('/')}
+            aria-label="Back to Home"
+          >
+            <FaArrowLeft className="back-arrow-icon" />
+          </button>
+
           <img
             src={details.imageUrl}
             alt="restaurant"
@@ -169,17 +180,13 @@ const RestaurantDetails = () => {
                 <p>
                   <FaStar /> {details.rating}
                 </p>
-
-                <p>
-                  {details.reviewsCount}+ Ratings
-                </p>
+                <p>{details.reviewsCount}+ Ratings</p>
               </div>
 
               <div>
                 <p>
                   <FaRupeeSign /> {details.costForTwo}
                 </p>
-
                 <p>Cost for two</p>
               </div>
             </div>
@@ -217,9 +224,7 @@ const RestaurantDetails = () => {
                     <button
                       type="button"
                       className="add-btn"
-                      onClick={() =>
-                        handleAdd(item)
-                      }
+                      onClick={() => handleAdd(item)}
                     >
                       ADD
                     </button>
@@ -228,9 +233,7 @@ const RestaurantDetails = () => {
                       <button
                         type="button"
                         data-testid="decrement-count"
-                        onClick={() =>
-                          handleDecrement(item.id)
-                        }
+                        onClick={() => handleDecrement(item.id)}
                       >
                         <HiOutlineMinusSm />
                       </button>
@@ -242,9 +245,7 @@ const RestaurantDetails = () => {
                       <button
                         type="button"
                         data-testid="increment-count"
-                        onClick={() =>
-                          handleIncrement(item.id)
-                        }
+                        onClick={() => handleIncrement(item.id)}
                       >
                         <BsPlus />
                       </button>
